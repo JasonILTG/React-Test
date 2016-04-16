@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server-src/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,12 @@
     "webpack-dev-server": "^1.10.*"
   },
   "dependencies": {
+    "body-parser": "^1.15.0",
+    "es6-promise": "^3.1.2",
+    "express": "^4.13.4",
+    "fetch": "^1.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "nodemon": "^1.9.1",
     "react": "^0.13.3",
     "react-router": "^2.0.1"
   }

@@ -5,7 +5,7 @@ class InputBullet extends React.Component {
 	constructor() {
 		super();
 
-		// Text is initially blabk
+		// Text is initially blank
 		this.state = {
 			text: ''
 		};
@@ -21,7 +21,7 @@ class InputBullet extends React.Component {
 		// Prevents the default action of refreshing the page
 		event.preventDefault();
 		
-		// Call the onSubmit method provided by the parent BulletList and reset the
+		// Call the onSubmit method provided by the parent BulletList and reset the text box
 		this.props.onSubmit(this.state.text);
 		this.setState({text: ''});
 	}
