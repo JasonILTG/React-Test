@@ -21,7 +21,7 @@ app.use('/account', account.router);
 app.use(util.end);
 
 // Start the server
-const port = 4242;
+var port = 4242;
 app.listen(port, function () {
 	console.log("Listening on port " + port + "!");
 });

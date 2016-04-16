@@ -33,7 +33,7 @@ class Home extends React.Component {
 	}
 }
 
-let routes = (
+var routes = (
 	<Router history={browserHistory}>
 		{/* App serves as the navigation bar */}
 		<Route path="/" component={App}>
