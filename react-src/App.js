@@ -9,16 +9,19 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
+				{/* Navigation bar */}
 				<h1>Navigation</h1>
 				<p><Link to="bullet">Bullet App</Link></p>
 				<p><Link to="account">Login App</Link></p>
 				
+				{/* Display all children */}
 				{this.props.children}
 			</div>
 		)
 	}
 }
 
+// Home page
 class Home extends React.Component {
 	render() {
 		return (
@@ -32,7 +35,9 @@ class Home extends React.Component {
 
 let routes = (
 	<Router history={browserHistory}>
+		{/* App serves as the navigation bar */}
 		<Route path="/" component={App}>
+			{/* Have all routes under App */}
 			<IndexRoute component={Home} />
 			<Route path="/bullet" component={BulletApp} />
 			<Route path="/account" component={LoginApp} />

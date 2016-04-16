@@ -15,7 +15,7 @@ class BulletApp extends React.Component {
 
 	/* Returns the next unused ID (for component keys) */
 	getNextID() {
-		var toReturn = this.state.nextID;
+		let toReturn = this.state.nextID;
 		this.setState({nextID: this.state.nextID + 1});
 		return toReturn;
 	}

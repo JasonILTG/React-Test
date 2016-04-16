@@ -88,6 +88,8 @@
 			_get(Object.getPrototypeOf(App.prototype), 'constructor', this).apply(this, arguments);
 		}
 
+		// Home page
+
 		_createClass(App, [{
 			key: 'render',
 			value: function render() {
@@ -171,6 +173,7 @@
 
 	// Render the app
 	_react2['default'].render(routes, document.getElementById('app'));
+	/* Navigation bar */ /* Display all children */ /* App serves as the navigation bar */ /* Have all routes under App */
 
 /***/ },
 /* 2 */

@@ -5,16 +5,19 @@ var util = require('./util.js');
 
 var parser = require('./parser.js');
 
-var createAccount = function(request, response, next) {
+// Create an account
+let createAccount = function(request, response, next) {
 	console.log('Account created with username ' + request.body.user +
 		' and password ' + request.body.password + '.');
 
 	next();
 }
 
-var verifyAccount = function(request, response, next) {
+// Verify the password and username of an account
+let verifyAccount = function(request, response, next) {
 	console.log('Verifying ' + request.body.user +
 		' with password ' + request.body.password + '...');
+	
 	if (request.body.user === request.body.password) {
 		response.json({
 			valid: true
