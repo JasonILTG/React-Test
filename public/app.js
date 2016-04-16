@@ -138,9 +138,18 @@
 			key: 'render',
 			value: function render() {
 				return _react2['default'].createElement(
-					'h1',
+					'div',
 					null,
-					'Where the heart is'
+					_react2['default'].createElement(
+						'h1',
+						null,
+						'Home'
+					),
+					_react2['default'].createElement(
+						'p',
+						null,
+						'Where the heart is'
+					)
 				);
 			}
 		}]);
@@ -154,6 +163,7 @@
 		_react2['default'].createElement(
 			_reactRouter.Route,
 			{ path: '/', component: App },
+			_react2['default'].createElement(_reactRouter.IndexRoute, { component: Home }),
 			_react2['default'].createElement(_reactRouter.Route, { path: '/bullet', component: _BulletAppJs2['default'] }),
 			_react2['default'].createElement(_reactRouter.Route, { path: '/account', component: _LoginAppJs2['default'] })
 		)

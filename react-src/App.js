@@ -22,7 +22,10 @@ class App extends React.Component {
 class Home extends React.Component {
 	render() {
 		return (
-			<h1>Where the heart is</h1>
+			<div>
+				<h1>Home</h1>
+				<p>Where the heart is</p>
+			</div>
 		)
 	}
 }
@@ -30,6 +33,7 @@ class Home extends React.Component {
 let routes = (
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
+			<IndexRoute component={Home} />
 			<Route path="/bullet" component={BulletApp} />
 			<Route path="/account" component={LoginApp} />
 		</Route>
