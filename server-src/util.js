@@ -20,10 +20,8 @@ var dummy = function (request, response, next) {
 	next();
 }
 
-var sendToIndex = function (request, response, next) {
-	console.log("Sending to Index");
-	response.sendFile(path.join(__dirname, 'index.html'));
-	next();
+var sendToIndex = function (request, response) {
+	response.sendFile(path.resolve(__dirname, '../public/index.html'));
 }
 
 exports.logger = logger;
